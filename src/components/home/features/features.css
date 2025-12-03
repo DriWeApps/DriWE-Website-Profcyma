@@ -51,11 +51,25 @@
   transition: background 0.3s, transform 0.3s;
 }
 
-.Features_sec .features_slider_sec .slider-div .icondiv .icon {
-  height: 75px;
-  width: auto;
-  filter: brightness(0) invert(1); /* light icon effect */
+/* Face recognition photo icon (not vector) */
+.Features_sec .features_slider_sec .slider-div .icondiv .photo-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;       /* crop nicely */
+  border-radius: 10px;     /* rounded corners */
+  filter: none !important; /* remove invert filter */
 }
+
+/* SOS icon aligned to the left */
+.Features_sec .features_slider_sec .slider-div .icondiv .sos-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: inline-block; /* keep it inline to the left */
+  margin: 0;             /* remove auto centering */
+  vertical-align: top;   /* align to top of content */
+}
+
 
 .Features_sec .features_slider_sec .slider-div .contentdiv {
   margin-top: 15px;
