@@ -1,0 +1,135 @@
+/* ===========================
+   WHO WE ARE SECTION – DARK THEME
+=========================== */
+
+.Who_we_are_sec {
+    margin-bottom: 5%;
+    background: #121212; /* dark background for section */
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* default text color */
+}
+
+.Who_we_are_sec .left_sec {
+    padding-right: 40px;
+}
+
+.Who_we_are_sec .common_title_div {
+    text-align: left;
+    color: #ffffff;
+}
+
+.Who_we_are_sec .whowecontent {
+    font-size: 15px;
+    color: #e0e0e0; /* light gray text for dark bg */
+}
+
+.Who_we_are_sec .rightsec {
+    position: relative;
+    background-color: #1e1e1e; /* dark card background */
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Who_we_are_sec .rightsec .welogo {
+    width: 65%;
+    height: auto;
+    transition: 0.3s;
+    opacity: 0.3;
+}
+
+.Who_we_are_sec .rightsec .icondiv {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fcd128; /* bright accent */
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.Who_we_are_sec .rightsec .icondiv .rightarrow {
+    font-size: 45px;
+    transform: rotate(320deg);
+    color: #121212; /* arrow color dark to contrast yellow bg */
+}
+
+/* Hover effects */
+@media (min-width: 992px) {
+  .Who_we_are_sec:hover .rightsec .welogo {
+    width: 50%;
+    height: auto;
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  .Who_we_are_sec:hover .rightsec .icondiv {
+    top: -20px;
+    right: -20px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .Who_we_are_sec.in-view .rightsec .welogo {
+    width: 50%;
+    height: auto;
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  .Who_we_are_sec.in-view .rightsec .icondiv {
+    top: -20px;
+    right: -20px;
+    transition: 0.3s;
+  }
+}
+
+/* Mobile responsive */
+@media (min-width:0px) and (max-width:767.98px) {
+    .Who_we_are_sec .rightsec .welogo {
+        width: 35%;
+    }
+
+    .Who_we_are_sec.in-view .rightsec .welogo {
+        width: 35%;
+    }
+
+    .Who_we_are_sec.in-view .rightsec .icondiv {
+        top: 0px;
+        right: 0px;
+    }
+
+    .Who_we_are_sec .rightsec {
+        height: 310px;
+    }
+
+    .Who_we_are_sec .rightsec .icondiv .rightarrow {
+        font-size: 25px;
+    }
+
+    .Who_we_are_sec {
+        text-align: center;
+    }
+
+    .Who_we_are_sec .common_title_div {
+        text-align: center;
+    }
+
+    .Who_we_are_sec .commonbtndiv .common-btn {
+        margin: auto;
+    }
+
+    .Who_we_are_sec .left_sec {
+        padding-right: 0px;
+    }
+}

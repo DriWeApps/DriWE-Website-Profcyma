@@ -1,0 +1,81 @@
+.commonbtndiv a {
+    text-decoration: none;
+}
+
+.commonbtndiv .common-btn {
+    position: relative;
+    border: 0px;
+    padding: 7px 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    /* background: linear-gradient(); */
+    background:#2a2a2a;
+}
+.commonbtndiv .common-btn {
+    background:#2a2a2a;
+}
+.commonbtndiv .common-btn:hover {
+    background:#000;
+}
+
+.commonbtndiv .common-btn span {
+    position: relative;
+    color: #fff;
+    z-index: 99;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.commonbtndiv .common-btn:hover span {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.commonbtndiv .common-btn:hover span {
+    /* font-size: 18px;
+     transition: 0.3s; */
+}
+
+/* .commonbtndiv .common-btn:hover{
+    background-color: #000;    
+     transition: 0.3s;
+}
+.commonbtndiv .common-btn::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    background-color: #2a2a2a;
+     transition: 0.3s;
+}
+.commonbtndiv .common-btn::after{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    background-color: #2a2a2a;
+     transition: 0.3s;
+}
+
+.commonbtndiv .common-btn:hover::before{
+    width: 0%;
+    transition: 0.3s;
+}
+.commonbtndiv .common-btn:hover::after{
+    width: 0%;
+    transition: 0.3s;
+} */
+
+
+@media (min-width:0px) and (max-width:991px) {
+    .commonbtndiv .common-btn span {
+    font-size: 14px;
+}
+}

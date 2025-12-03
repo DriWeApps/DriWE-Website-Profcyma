@@ -1,0 +1,58 @@
+.Get_the_app_sec {
+    background: #000; /* dark background */
+}
+
+.Get_the_app_sec .box_layer {
+    background: #1b1b1b; /* darker box background */
+    border-radius: 0% 0% 5% 5% / 0% 0% 50% 50%;
+}
+
+.Get_the_app_sec .box_layer .getapp_box {
+    box-shadow: 0px 0px 10px 0px #333; /* darker shadow */
+    padding: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Get_the_app_sec .box_layer .getapp_box .wherep {
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff; /* white text */
+    margin-bottom: 5px;
+}
+
+.Get_the_app_sec .box_layer .getapp_box .geth6 {
+    font-weight: 800;
+    font-size: 30px;
+    color: #fcd128; /* accent yellow for highlight */
+    margin-bottom: 0px;
+}
+
+.Get_the_app_sec .box_layer .getapp_box .playstore {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+@media (min-width:0px) and (max-width:991px) {
+    .Get_the_app_sec .box_layer .getapp_box .wherep {
+        font-size: 15px;
+    }
+
+    .Get_the_app_sec .box_layer .getapp_box .geth6 {
+        font-size: 20px;
+    }
+
+    .Get_the_app_sec .box_layer .getapp_box .playstore {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .Get_the_app_sec .box_layer .getapp_box .text-div {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Get_the_app_sec .box_layer {
+        border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    }
+}

@@ -1,0 +1,74 @@
+/* ===========================
+       RATINGS SECTION – DARK THEME
+   =========================== */
+
+.Ratings_sec {
+    margin-top: 3%;
+    background: #121212; /* overall dark wrapper (optional) */
+    padding: 20px 0;
+}
+
+.Ratings_sec .rating_div {
+    background: #1e1e1e; /* dark card */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: end;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.Ratings_sec .rating_div .h1rate {
+    font-size: 69px;
+    color: #ffffff; /* white text */
+    font-weight: 700;
+}
+
+.Ratings_sec .rating_div .h1rate svg {
+    font-size: 55px;
+    color: #ffcb00; /* gold star pops on dark bg */
+}
+
+.Ratings_sec .right_div {
+    text-align: end;
+}
+
+.Ratings_sec .right_div .overh4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 32px;
+    color: #c475ff; /* lighter version of #3b146a for better contrast */
+}
+
+.Ratings_sec .right_div .disp {
+    font-weight: 500;
+    font-size: 24px;
+    color: #e0e0e0; /* light gray text */
+    margin-bottom: 0px;
+}
+
+/* ====== MOBILE ====== */
+@media (min-width:0px) and (max-width:767.98px) {
+
+    .Ratings_sec .rating_div {
+        text-align: center;
+    }
+
+    .Ratings_sec .rating_div .h1rate {
+        font-size: 40px;
+    }
+
+    .Ratings_sec .rating_div .h1rate svg {
+        font-size: 33px;
+    }
+
+    .Ratings_sec .right_div {
+        text-align: center;
+    }
+
+    .Ratings_sec .right_div .overh4 {
+        font-size: 20px;
+    }
+
+    .Ratings_sec .right_div .disp {
+        font-size: 16px;
+    }
+}

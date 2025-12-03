@@ -1,0 +1,48 @@
+/* .How_to_book_sec .left_sec .banner{
+    width: 100%;
+     height: auto;
+    border-radius: 20px;
+}
+.How_to_book_sec .right_sec .gif{
+    width: 100%;
+    height: auto;
+} */
+
+/* Half-Dark Theme - How to Book Section */
+.How_to_book_sec {
+  background: linear-gradient(120deg, #1a1a1a 0%, #3a3a3a 100%);
+  padding: 5% 0;
+  color: #e0e0e0;
+}
+
+.How_to_book_sec .box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  height: 380px;                    /* SAME FIXED HEIGHT FOR BOTH BOXES */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Image inside both boxes */
+.How_to_book_sec .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;                /* keeps proper cropping, same box size */
+  border-radius: 15px;
+}
+
+/* Center title */
+.How_to_book_sec h2 {
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .How_to_book_sec .box {
+    height: auto;                   /* flexible on mobile */
+  }
+}

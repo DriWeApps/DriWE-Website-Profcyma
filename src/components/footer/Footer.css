@@ -1,0 +1,170 @@
+.footer_section {
+    background-color: #000;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.footer_section .bigtitlesec {
+    text-align: center;
+}
+
+.footer_section .bigtitlesec .driwebigtitle {
+    font-weight: 700;
+    font-size: 132px;
+    color: #ffcb003b;
+    margin-top: -62px;
+}
+
+.footer_section .bigtitlesec .ridingp {
+    font-weight: 700;
+    font-size: 41px;
+    letter-spacing: 0.78em;
+    color: #ffffff4a;
+}
+
+.footer_section .foot_menus_div {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #545454;
+    padding-bottom: 35px;
+   
+}
+
+.footer_section .foot_menus_div .menudiv{
+  position: relative;
+     transition: 0.3s;
+}
+
+.footer_section .foot_menus_div .menudiv::before{
+    content: "";
+    position: absolute;    
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 1px;
+    background-color: #ffd500;
+    transition: 0.3s;
+}
+.footer_section .foot_menus_div .menudiv:hover::after{
+   content: "";
+    position: absolute;  
+    left: 0px;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #ffd500;
+    transition: 0.3s;
+}
+
+
+
+.footer_section .foot_menus_div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+     transition: 0.3s;
+}
+/* .footer_section .foot_menus_div a::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -5px;
+    width: 1%;
+    height: 1px;
+    background-color: #ffd500;
+    transition: 0.3s;
+}
+.footer_section .foot_menus_div a:hover::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #ffd500;
+    transition: 0.3s;
+} */
+
+.footer_section .foot_menus_div .menudiv {
+    margin: 0px 40px;
+}
+
+.footer_section .copyrightsec .copyp,
+.footer_section .copyrightsec {
+    margin-top: 15px;
+}
+
+.footer_section .copyrightsec .copyp,
+.footer_section .copyrightsec .copyp a {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: 21px;
+    color: #ffd500;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.footer_section .copyrightsec .emaill {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.footer_section .copyrightsec .emaill .icon {
+    width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.footer_section .copyrightsec .bdright {
+    border-right: 2px solid #545454;
+}
+
+@media (min-width:0px) and (max-width:991px) {
+    .footer_section .bigtitlesec .driwebigtitle {
+        font-size: 60px;
+        margin-top: -23px;
+    }
+
+    .footer_section .bigtitlesec .ridingp {
+        font-size: 20px;
+        letter-spacing: 0.3em;
+    }
+
+    .footer_section .foot_menus_div a {
+        font-size: 14px;
+    }
+
+    .footer_section .foot_menus_div {
+        display: block;
+    }
+
+    .footer_section .foot_menus_div .menudiv {
+        margin: 5px 10px;
+    }
+    .footer_section .copyrightsec .copyp, .footer_section .copyrightsec {
+    text-align: center;
+}
+.footer_section .foot_menus_div .menudiv:hover::after{
+    width: 0%;
+}
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .footer_section .foot_menus_div .menudiv {
+        margin: 0px 25px;
+    }
+
+    .footer_section .bigtitlesec .driwebigtitle {
+        font-size: 100px;
+        margin-top: -44px;
+    }
+
+    .footer_section .bigtitlesec .ridingp {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {}

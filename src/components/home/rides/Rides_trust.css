@@ -1,0 +1,124 @@
+.Rides_trust_section {
+    margin-bottom: 5%;
+    background-color: #1b1b1b; /* dark background */
+    color: #ffffff; /* default text color */
+    padding: 5% 0;
+}
+
+.Rides_trust_section .slider-sec {
+    margin-top: 5%;
+    padding: 0% 5%;
+}
+
+.Rides_trust_section .slider-sec .main_person .mapars {
+    width: 90%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.Rides_trust_section .slider-sec .cli-rev-dev {
+    position: relative;
+}
+
+.Rides_trust_section .slider-sec .cli-rev-dev .review {
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: #ccc; /* light gray for readability */
+}
+
+.Rides_trust_section .slider-sec .cli-rev-dev .name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff; /* white text */
+    margin-bottom: 0px;
+}
+
+.Rides_trust_section .slider-sec .cli-rev-dev .position {
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    color: #aaa; /* lighter gray */
+}
+
+.Rides_trust_section .slider-sec .cli-rev-dev .lay1,
+.Rides_trust_section .slider-sec .cli-rev-dev .lay2 {
+    color: #ffcb00; /* gold accents */
+}
+
+.Rides_trust_section .slider-sec .content_sec .slide_div .personimg {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.Rides_trust_section .slider-sec .swiper-button-next,
+.Rides_trust_section .slider-sec .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: #444; /* dark nav buttons */
+    border-radius: 100px;
+}
+
+.Rides_trust_section .slider-sec .swiper-button-prev:after,
+.Rides_trust_section .slider-sec .swiper-button-next:after {
+    color: #fff; /* white arrows */
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+/* Mobile responsive adjustments */
+@media (min-width:0px) and (max-width:767.98px) {
+
+    .Rides_trust_section .slider-sec .swiper-button-next,
+    .Rides_trust_section .slider-sec .swiper-button-prev {
+        width: 25px;
+        height: 25px;
+        top: 60%;
+        background: #444; /* dark background */
+    }
+
+    .Rides_trust_section .slider-sec .swiper-button-prev:after,
+    .Rides_trust_section .slider-sec .swiper-button-next:after {
+        font-size: 13px;
+    }
+
+    .Rides_trust_section .slider-sec .main_person .mapars {
+        width: 50%;
+    }
+
+    .Rides_trust_section .slider-sec .main_person {
+        text-align: center;
+    }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .Rides_trust_section .slider-sec .main_person .mapars {
+        width: 50%;
+    }
+
+    .Rides_trust_section .slider-sec .main_person {
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .Rides_trust_section .slider-sec .main_person .mapars {
+        width: 100%;
+    }
+
+    .Rides_trust_section .slider-sec .content_sec .slide_div .personimg {
+        width: 88%;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+    .Rides_trust_section .slider-sec .main_person .mapars {
+        width: 96%;
+    }
+}

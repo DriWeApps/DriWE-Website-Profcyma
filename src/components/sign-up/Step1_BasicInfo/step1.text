@@ -1,0 +1,93 @@
+"use client"
+import { Card, Form } from "react-bootstrap"
+import Select from "react-select"
+import PhoneInput from "react-phone-input-2"
+import Common_button from "../../common/common-btn/Common_button"
+
+function Step1_BasicInfo({ formData, setFormData, nextStep }) {
+    const cityOptions = [
+        { value: "mumbai", label: "Mumbai" },
+        { value: "pune", label: "Pune" },
+        { value: "nagpur", label: "Nagpur" },
+    ]
+
+    const pincodeOptions = [
+        { value: "400001", label: "400001" },
+        { value: "411001", label: "411001" },
+        { value: "440001", label: "440001" },
+    ]
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target
+        setFormData((prev) => ({ ...prev, [name]: value }))
+    }
+
+    return (
+        <Card className="signup-card">
+            <Card.Body>
+                <h4 className="step-title">Signup</h4>
+                <Form>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Driver's Full Name</Form.Label>
+                        <Form.Control
+                            type="text"
+                            placeholder="Enter Full Name"
+                            name="fullName"
+                            value={formData.fullName}
+                            onChange={handleInputChange}
+                        />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Driver's Email Id</Form.Label>
+                        <Form.Control
+                            type="email"
+                            placeholder="Enter Email Id"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                        />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Owner's Number</Form.Label>
+                        <div className="phone-input">
+                            <PhoneInput country={"in"} />
+                        </div>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Driver's Number</Form.Label>
+                        <div className="phone-input">
+                            <PhoneInput country={"in"} />
+                        </div>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>City</Form.Label>
+                        <Select
+                            options={cityOptions}
+                            value={cityOptions.find(opt => opt.value === formData.city)}
+                            onChange={(selected) =>
+                                setFormData(prev => ({ ...prev, city: selected?.value || "" }))
+                            }
+                        />
+                    </Form.Group>
+                    <Form.Group className="mb-4">
+                        <Form.Label>Pincode</Form.Label>
+                        <Select
+                            options={pincodeOptions}
+                            value={pincodeOptions.find(opt => opt.value === formData.pincode)}
+                            onChange={(selected) =>
+                                setFormData(prev => ({ ...prev, pincode: selected?.value || "" }))
+                            }
+                        />
+                    </Form.Group>
+                </Form>
+            </Card.Body>
+            <Card.Footer>
+                <div className="step-navigation">
+                    <Common_button name={"Get OTP"} onClick={nextStep} />
+                </div>
+            </Card.Footer>
+        </Card>
+    )
+}
+
+export default Step1_BasicInfo

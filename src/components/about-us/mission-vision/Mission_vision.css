@@ -1,0 +1,196 @@
+/* ============================
+   HALF DARK THEME (Premium)
+   ============================ */
+.Mission_vision_sec {
+  background: linear-gradient(100deg, #1b1b1b 0%, #242424 45%, #ffffff 100%);
+  padding: 5% 0;
+  color: #eaeaea;
+}
+
+.Mission_vision_sec .misvid_sec {
+  margin-top: 5%;
+}
+
+/* ======================================
+   VISION BOX – Dark Glass Card (Improved)
+   ====================================== */
+.Mission_vision_sec .misvid_sec .visionbox {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+.Mission_vision_sec .misvid_sec .visionbox:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.Mission_vision_sec .misvid_sec .visionbox .imgdiv .img {
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.Mission_vision_sec .misvid_sec .visionbox:hover .imgdiv .img {
+  opacity: 0.85;
+}
+
+.Mission_vision_sec .misvid_sec .visionbox .content-sec .content {
+  font-size: 15px;
+  color: #f5f5f5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* ======================================
+   BANNER SECTION – Premium Look
+   ====================================== */
+.Mission_vision_sec .misvid_sec .banner_div {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+
+.Mission_vision_sec .misvid_sec .banner_div .banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  transition: 0.4s ease;
+}
+
+.Mission_vision_sec .misvid_sec .banner_div:hover .banner {
+  transform: scale(1.05);
+  filter: brightness(50%);
+}
+
+/* Overlay text */
+.Mission_vision_sec .misvid_sec .banner_div .overlay-content {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  width: 55%;
+  text-align: right;
+}
+
+.Mission_vision_sec .misvid_sec .banner_div .overlay-content .ourh1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.Mission_vision_sec .misvid_sec .banner_div .overlay-content .wep {
+  font-size: 14px;
+  color: #fef6d7;
+}
+
+.Mission_vision_sec .misvid_sec .banner_div .overlay-content .havep {
+  font-size: 20px;
+  color: #fee4c9;
+}
+
+/* Button */
+.Mission_vision_sec .misvid_sec .banner_div .common-btn {
+  background: #ffffff;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.Mission_vision_sec .misvid_sec .banner_div .common-btn span {
+  color: #2a2a2a;
+  font-weight: 600;
+}
+
+/* ==================================================
+   Equal height logic for left boxes + right banner
+   ================================================== */
+@media (min-width: 992px) {
+  .Mission_vision_sec .misvid_sec .row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .Mission_vision_sec .misvid_sec .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Mission_vision_sec .misvid_sec .leftsec {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Mission_vision_sec .misvid_sec .leftsec .visionbox {
+    flex: 1;
+  }
+
+  .Mission_vision_sec .misvid_sec .banner_div {
+    flex: 1;
+    display: flex;
+    height: 100%;
+  }
+
+  .Mission_vision_sec .misvid_sec .banner_div .overlay-content {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+/* ===================== MOBILE ANIMATIONS ===================== */
+@media (max-width: 991px) {
+  .Mission_vision_sec.in-view .banner {
+    transform: scale(1.12);
+    filter: brightness(55%);
+  }
+
+  .Mission_vision_sec.in-view .visionbox {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .Mission_vision_sec .misvid_sec .visionbox .content-sec .content {
+    font-size: 14px;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+
+  .Mission_vision_sec .misvid_sec .banner_div .overlay-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .Mission_vision_sec .misvid_sec .overlay-content .ourh1 {
+    font-size: 26px;
+  }
+
+  .Mission_vision_sec .misvid_sec .overlay-content .havep {
+    font-size: 18px;
+  }
+}
+
+/* ===================== TABLET ===================== */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .Mission_vision_sec .misvid_sec .banner_div .overlay-content {
+    width: 85%;
+  }
+
+  .Mission_vision_sec .misvid_sec .overlay-content .ourh1 {
+    font-size: 30px;
+  }
+
+  .Mission_vision_sec .misvid_sec .overlay-content .havep {
+    font-size: 18px;
+  }
+}

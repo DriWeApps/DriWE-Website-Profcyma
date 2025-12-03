@@ -1,0 +1,39 @@
+.common_title_div {
+    text-align: center;
+    background-color: #000000; /* Black background */
+    padding: 20px 10px; /* Add padding for spacing */
+    border-radius: 5px; /* optional: slightly rounded corners */
+}
+
+.common_title_div .title {
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+
+.common_title_div .title span {
+    font-weight: 600;
+    color: white;
+}
+
+.common_title_div .subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (min-width:0px) and (max-width:767.98px) {
+    .common_title_div .title { font-size: 20px; margin-bottom: 5px; }
+    .common_title_div .subtitle { font-size: 15px; }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .common_title_div .title { font-size: 24px; margin-bottom: 10px; }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+    .common_title_div .title { font-size: 26px; margin-bottom: 16px; }
+}

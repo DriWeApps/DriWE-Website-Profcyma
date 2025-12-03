@@ -1,0 +1,32 @@
+   /* Half-Dark Theme Section */
+.About_content_sec {
+    padding: 5% 0%;
+    background: linear-gradient(120deg, #1a1a1a 0%, #3a3a3a 100%); /* Half-dark gradient */
+    color: #e0e0e0; /* Light text for readability */
+}
+
+/* Centered Content */
+.About_content_sec .contentdiv {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Text Styling */
+.About_content_sec .contentdiv .content {
+    font-size: 16px;
+    color: #dcdcdc;  /* Soft light grey */
+    line-height: 1.7;
+}
+
+.About_content_sec .contentdiv .content.bold {
+    font-weight: 600;
+    color: #ffffff;   /* Brighter for emphasis */
+}
+
+/* Responsive */
+@media (min-width: 0px) and (max-width: 991px) {
+    .About_content_sec .contentdiv .content {
+        font-size: 14px;
+    }
+}

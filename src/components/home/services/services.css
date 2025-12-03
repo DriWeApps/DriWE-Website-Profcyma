@@ -1,0 +1,98 @@
+.Services_section {
+  margin: 7% 0%;
+}
+
+.Services_section .cabook_div {
+  border-radius: 15px;
+  background: #1b1b1b; /* dark card background */
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 5%;
+  transition: background 0.3s;
+}
+
+.Services_section .cabook_div:hover {
+  background: #2a2a2a; /* slightly lighter on hover */
+}
+
+.Services_section .cabook_div .img_div {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.Services_section .cabook_div .img_div .serviceimg {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.Services_section .cabook_div .content_div {
+  padding-left: 4%;
+}
+
+.Services_section .cabook_div .content_div .cab-title {
+  color: #ffffff; /* white title */
+  font-size: 53px;
+  font-weight: 800;
+}
+
+.Services_section .cabook_div .content_div .content {
+  width: 90%;
+  font-size: 15px;
+  color: #cccccc; /* light gray text for dark theme */
+}
+
+/* Button style for dark theme */
+.Services_section .cabook_div .content_div .commonbtndiv .common-btn {
+  background: #ffcb00; /* gold button for contrast */
+  color: #000; 
+  border: none;
+  transition: 0.3s;
+}
+
+.Services_section .cabook_div .content_div .commonbtndiv .common-btn:hover {
+  background: #e6b800; /* darker gold on hover */
+}
+
+/* Desktop hover effects */
+@media (min-width: 992px) {
+  .Services_section .cabook_div:hover .img_div .serviceimg {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+
+/* Mobile in-view effect */
+@media (max-width: 991.98px) {
+  .Services_section .cabook_div.in-view .img_div .serviceimg {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+
+/* Mobile adjustments */
+@media (min-width: 0px) and (max-width: 991px) {
+  .Services_section .cabook_div .content_div {
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .Services_section .cabook_div .content_div .content {
+    width: 100%;
+    font-size: 14px;
+    color: #cccccc;
+  }
+
+  .Services_section .cabook_div .content_div .commonbtndiv .common-btn {
+    background: #ffcb00;
+    margin: auto;
+    color: #000;
+  }
+
+  .Services_section .cabook_div .content_div .cab-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+  }
+}

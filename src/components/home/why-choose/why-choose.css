@@ -1,0 +1,175 @@
+/* ===========================
+   WHY CHOOSE SECTION – DARK THEME
+=========================== */
+
+.Why_choose_section {
+  background: #121212; /* overall dark wrapper */
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Why_choose_section .contentdiv {
+  position: relative;
+}
+
+.Why_choose_section .contentdiv .animation_div {
+  position: absolute;
+  top: -15%;
+  width: 80%;
+  left: 10%;
+  z-index: 9;
+}
+
+.Why_choose_section .contentdiv .mid_sec {
+  position: relative;
+  z-index: 999;
+}
+
+.Why_choose_section .contentdiv .mid_sec .mockupimg {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+/* Boxes styling */
+.Why_choose_section .contentdiv .choose_box {
+  margin-bottom: 50px;
+}
+
+.Why_choose_section .contentdiv .left_sec .choose_box {
+  text-align: right;
+}
+
+.Why_choose_section .contentdiv .right_sec .choose_box {
+  text-align: left;
+}
+
+.Why_choose_section .contentdiv .choose_box .number {
+  font-weight: 700;
+  font-size: 54px;
+  color: #c475ff; /* bright/light color on dark */
+  transition: 0.3s;
+}
+
+.Why_choose_section .contentdiv .choose_box .whytitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.Why_choose_section .contentdiv .choose_box .content {
+  font-weight: normal;
+  font-size: 15px;
+  color: #e0e0e0;
+  margin-bottom: 0px;
+}
+
+/* Hover / in-view animations */
+@media (min-width: 992px) {
+  .Why_choose_section .contentdiv:hover .choose_box .number {
+    color: #fcd128; /* highlight on hover */
+  }
+
+  .Why_choose_section .contentdiv:hover .mid_sec .mockupimg {
+    width: 100%;
+    height: auto;
+    transform: scale(0.8);
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .Why_choose_section .contentdiv.in-view .choose_box .number {
+    color: #fcd128;
+  }
+
+  .Why_choose_section .contentdiv.in-view .mid_sec .mockupimg {
+    width: 100%;
+    height: auto;
+    transform: scale(0.8);
+    transition: 0.3s;
+  }
+}
+
+/* Mobile responsive */
+@media (min-width:0px) and (max-width: 767.98px) {
+  .Why_choose_section .contentdiv .left_sec .choose_box,
+  .Why_choose_section .contentdiv .right_sec .choose_box {
+    text-align: center;
+  }
+
+  .Why_choose_section .contentdiv .choose_box .number {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box .content {
+    font-size: 14px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box {
+    margin-bottom: 20px;
+  }
+
+  .Why_choose_section .contentdiv .mid_sec {
+    text-align: center;
+  }
+
+  .Why_choose_section .contentdiv .mid_sec .mockupimg {
+    width: 50%;
+  }
+
+  .Why_choose_section .contentdiv.in-view .mid_sec .mockupimg {
+    height: auto;
+    transform: scale(1);
+    width: 50%;
+  }
+
+  .Why_choose_section .contentdiv .animation_div {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Why_choose_section .contentdiv .choose_box .number {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box .content {
+    font-size: 14px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .Why_choose_section .contentdiv .choose_box .number {
+    font-size: 40px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box .whytitle {
+    font-size: 16px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box {
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium desktops */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .Why_choose_section .contentdiv .choose_box .number {
+    font-size: 50px;
+  }
+
+  .Why_choose_section .contentdiv .choose_box {
+    margin-bottom: 25px;
+  }
+}

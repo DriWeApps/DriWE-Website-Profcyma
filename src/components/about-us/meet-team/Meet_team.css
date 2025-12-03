@@ -1,0 +1,140 @@
+/* ======================================
+   MEET OUR TEAM – Dark Theme
+   ====================================== */
+.Meet_team_sec {
+    background: linear-gradient(120deg, #1b1b1b 0%, #262626 50%, #2f2f2f 100%);
+    padding: 5% 0;
+    color: #f5f5f5;
+}
+
+.Meet_team_sec .cardsec {
+    margin-top: 5%;
+}
+
+/* Team Card */
+.Meet_team_sec .cardsec .team_card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05); /* glass look */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Hover Elevation */
+.Meet_team_sec .cardsec .team_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Team Image */
+.Meet_team_sec .cardsec .team_card .imgdiv {
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.Meet_team_sec .cardsec .team_card .imgdiv .prsn_img {
+    width: 100%;
+    aspect-ratio: 1/1.1;
+    object-fit: cover;
+    filter: brightness(85%);
+    transition: 0.3s ease;
+}
+
+/* Image Hover Brightness */
+.Meet_team_sec .cardsec .team_card:hover .imgdiv .prsn_img {
+    filter: brightness(95%);
+}
+
+/* Name Overlay (DARK Gradient) */
+.Meet_team_sec .cardsec .team_card .name_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(30, 30, 30, 0.90) 60%,
+        rgba(50, 50, 50, 0.50) 100%
+    );
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Name Text */
+.Meet_team_sec .cardsec .team_card .name_overlay .name {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Description (Position + Social Icons) */
+.Meet_team_sec .cardsec .team_card .team_desc {
+    padding: 12px 10px 15px 12px;
+}
+
+.Meet_team_sec .cardsec .team_card .team_desc .emp_position {
+    font-weight: 500;
+    font-size: 16px;
+    color: #e6e6e6; /* was black */
+    margin-bottom: 0;
+}
+
+.Meet_team_sec .cardsec .team_card .team_desc .social_icon {
+    width: 25px;
+    margin-left: 10px;
+    filter: brightness(160%);
+    transition: 0.2s;
+}
+
+.Meet_team_sec .cardsec .team_card .team_desc .social_icon:hover {
+    filter: brightness(220%);
+    transform: scale(1.1);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 991px) {
+    .Meet_team_sec .cardsec .team_card .team_desc .emp_position {
+        font-size: 14px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .team_desc .social_icon {
+        width: 22px;
+        margin-left: 7px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .team_desc {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .name_overlay .name {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Meet_team_sec .cardsec .team_card .team_desc {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .team_desc .emp_position {
+        font-size: 14px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .team_desc .social_icon {
+        width: 23px;
+    }
+
+    .Meet_team_sec .cardsec .team_card .name_overlay .name {
+        font-size: 18px;
+    }
+}
