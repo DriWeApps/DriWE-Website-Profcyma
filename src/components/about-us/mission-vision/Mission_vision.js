@@ -56,11 +56,10 @@ const Mission_vision = () => {
                       <div className="col-9 my-auto">
                         <div className="content-sec">
                           <p className="content">
-                            To be the leading platform for seamless urban
-                            mobility, making transportation of people and goods
-                            fast, safe, & hassle-free. By blending innovation
-                            with everyday convenience, Driwe is redefining how
-                            cities move.
+                            At DriWE, our mission is to make every ride smooth, safe, 
+                            and affordable for our customers. We believe in complete transparency, 
+                            ensuring there are no hidden charges-only a clear, honest, 
+                            and reliable ride experience.
                           </p>
                         </div>
                       </div>
@@ -82,11 +81,8 @@ const Mission_vision = () => {
                       <div className="col-9 my-auto">
                         <div className="content-sec">
                           <p className="content">
-                            To be the leading platform for seamless urban
-                            mobility, making transportation of people and goods
-                            fast, safe, & hassle-free. By blending innovation
-                            with everyday convenience, Driwe is redefining how
-                            cities move.
+                            Our vision is to become the world’s best and safest ride-hailing application, 
+                            setting new standards in reliability, service quality, and customer experience.
                           </p>
                         </div>
                       </div>
