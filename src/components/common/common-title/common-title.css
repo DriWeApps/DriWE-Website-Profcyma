@@ -1,39 +1,61 @@
 .common_title_div {
     text-align: center;
-    background-color: #000000; /* Black background */
-    padding: 20px 10px; /* Add padding for spacing */
-    border-radius: 5px; /* optional: slightly rounded corners */
+    background: #000000; 
+    padding: 25px 15px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+/* Hover glow border */
+.common_title_div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+    border-color: #ffb703; /* highlight color */
+}
+
+/* Shine animation */
+.common_title_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.6s;
+}
+
+.common_title_div:hover::before {
+    left: 100%;
 }
 
 .common_title_div .title {
-    font-weight: 600;
-    font-size: 28px;
-    color: white;
-    font-family: Montserrat;
-    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
+/* Highlighted word */
 .common_title_div .title span {
-    font-weight: 600;
-    color: white;
+    color: #ffb703; /* highlight color */
 }
 
 .common_title_div .subtitle {
     font-weight: 500;
     font-size: 18px;
-    color: white;
+    color: #dddddd;
 }
 
-/* Responsive adjustments */
-@media (min-width:0px) and (max-width:767.98px) {
-    .common_title_div .title { font-size: 20px; margin-bottom: 5px; }
-    .common_title_div .subtitle { font-size: 15px; }
-}
-
-@media (min-width:769px) and (max-width:991px) {
-    .common_title_div .title { font-size: 24px; margin-bottom: 10px; }
-}
-
-@media (min-width:992px) and (max-width:1400px) {
-    .common_title_div .title { font-size: 26px; margin-bottom: 16px; }
+/* Responsive */
+@media (max-width:767px) {
+    .common_title_div .title { font-size: 22px; }
+    .common_title_div .subtitle { font-size: 14px; }
 }

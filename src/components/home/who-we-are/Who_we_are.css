@@ -1,135 +1,175 @@
 /* ===========================
-   WHO WE ARE SECTION – DARK THEME
+   WHO WE ARE SECTION – DARK THEME (Enhanced)
 =========================== */
 
 .Who_we_are_sec {
     margin-bottom: 5%;
-    background: #121212; /* dark background for section */
-    padding: 50px 0;
+    background: linear-gradient(135deg, #0b0b0b 0%, #1d1d1d 100%);
+    padding: 70px 0;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff; /* default text color */
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Spotlight background glow */
+.Who_we_are_sec::before {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(255,193,7,0.25), transparent 70%);
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(90px);
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+/* Decorative blurred shape */
+.Who_we_are_sec::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+    bottom: -80px;
+    right: -80px;
+    filter: blur(100px);
+    opacity: 0.5;
+}
+
+/* Left Content Section */
 .Who_we_are_sec .left_sec {
     padding-right: 40px;
 }
 
+/* Title */
 .Who_we_are_sec .common_title_div {
     text-align: left;
     color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
 }
 
+/* Animated underline */
+.Who_we_are_sec .common_title_div .title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.Who_we_are_sec .common_title_div .title::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: #ffb703; /* brand accent */
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.Who_we_are_sec:hover .common_title_div .title::after {
+    width: 120px;
+}
+
+/* Paragraph text */
 .Who_we_are_sec .whowecontent {
-    font-size: 15px;
-    color: #e0e0e0; /* light gray text for dark bg */
+    font-size: 17px;
+    color: #d9d9d9;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
+/* Right Box With Logo */
 .Who_we_are_sec .rightsec {
     position: relative;
-    background-color: #1e1e1e; /* dark card background */
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.15);
     width: 100%;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 18px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
+/* Right hover effects */
 .Who_we_are_sec .rightsec .welogo {
     width: 65%;
-    height: auto;
-    transition: 0.3s;
-    opacity: 0.3;
+    transition: 0.4s ease;
+    opacity: 0.35;
 }
 
+.Who_we_are_sec .rightsec:hover .welogo {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+/* Corner icon tag */
 .Who_we_are_sec .rightsec .icondiv {
     position: absolute;
     top: 0px;
     right: 0px;
-    background: #fcd128; /* bright accent */
+    background: #ffb703;
     width: 70px;
     height: 70px;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0px 18px 0px 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.35s ease;
+    box-shadow: 0 5px 15px rgba(255,183,3,0.45);
 }
 
 .Who_we_are_sec .rightsec .icondiv .rightarrow {
-    font-size: 45px;
+    font-size: 42px;
     transform: rotate(320deg);
-    color: #121212; /* arrow color dark to contrast yellow bg */
+    color: #121212;
 }
 
-/* Hover effects */
+/* Hover lift */
+.Who_we_are_sec:hover .rightsec {
+    transform: translateY(-6px);
+    border-color: #ffb703;
+}
+
+/* Push icon outward on hover (desktop) */
 @media (min-width: 992px) {
-  .Who_we_are_sec:hover .rightsec .welogo {
-    width: 50%;
-    height: auto;
-    transition: 0.3s;
-    opacity: 1;
-  }
-
   .Who_we_are_sec:hover .rightsec .icondiv {
-    top: -20px;
-    right: -20px;
-    transition: 0.3s;
+    top: -18px;
+    right: -18px;
   }
 }
 
-@media (max-width: 991.98px) {
-  .Who_we_are_sec.in-view .rightsec .welogo {
-    width: 50%;
-    height: auto;
-    transition: 0.3s;
-    opacity: 1;
-  }
-
-  .Who_we_are_sec.in-view .rightsec .icondiv {
-    top: -20px;
-    right: -20px;
-    transition: 0.3s;
-  }
-}
-
-/* Mobile responsive */
-@media (min-width:0px) and (max-width:767.98px) {
-    .Who_we_are_sec .rightsec .welogo {
-        width: 35%;
-    }
-
-    .Who_we_are_sec.in-view .rightsec .welogo {
-        width: 35%;
-    }
-
-    .Who_we_are_sec.in-view .rightsec .icondiv {
-        top: 0px;
-        right: 0px;
-    }
-
+/* Mobile responsive fixes */
+@media (max-width: 991px) {
+    .Who_we_are_sec,
+    .Who_we_are_sec .common_title_div,
     .Who_we_are_sec .rightsec {
-        height: 310px;
-    }
-
-    .Who_we_are_sec .rightsec .icondiv .rightarrow {
-        font-size: 25px;
-    }
-
-    .Who_we_are_sec {
         text-align: center;
-    }
-
-    .Who_we_are_sec .common_title_div {
-        text-align: center;
-    }
-
-    .Who_we_are_sec .commonbtndiv .common-btn {
-        margin: auto;
     }
 
     .Who_we_are_sec .left_sec {
         padding-right: 0px;
+    }
+
+    .Who_we_are_sec .rightsec .welogo {
+        width: 40%;
+    }
+
+    .Who_we_are_sec .rightsec {
+        height: 300px;
+    }
+
+    .Who_we_are_sec .common_title_div .title::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
