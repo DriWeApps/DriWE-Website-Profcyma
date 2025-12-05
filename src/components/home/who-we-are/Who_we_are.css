@@ -1,6 +1,6 @@
 .Who_we_are_sec {
     margin-bottom: 5%;
-    background: linear-gradient(black);
+    background: black;
     padding: 70px 0;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
@@ -13,7 +13,7 @@
     position: absolute;
     width: 550px;
     height: 550px;
-    background: radial-gradient(circle, rgba(255,193,7,0.25), transparent 70%);
+    background: black;
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
@@ -27,7 +27,7 @@
     position: absolute;
     width: 380px;
     height: 380px;
-    background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+    background: black;
     bottom: -80px;
     right: -80px;
     filter: blur(100px);

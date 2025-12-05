@@ -1,10 +1,6 @@
-/* ===========================
-       RATINGS SECTION – DARK THEME
-   =========================== */
-
 .Ratings_sec {
     margin-top: 3%;
-    background: #121212; /* overall dark wrapper (optional) */
+    background: black; /* overall dark wrapper (optional) */
     padding: 20px 0;
 }
 
