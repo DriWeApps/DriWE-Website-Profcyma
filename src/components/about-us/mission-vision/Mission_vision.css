@@ -63,11 +63,9 @@
   border-radius: 16px;
   overflow: hidden;
   background: #000;
-  min-height: 460px;
-  /* <-- ADD THIS LINE */
+  min-height: 460px;  /* <-- ADD THIS LINE */
   display: flex;
-  align-items: flex-end;
-  /* Ensures overlay stays inside */
+  align-items: flex-end; /* Ensures overlay stays inside */
 }
 
 
@@ -155,9 +153,8 @@
 
 
   @media (max-width: 991px) {
-    .banner_div {
-      min-height: 380px !important;
-      /* lower height for mobile */
-    }
+  .banner_div {
+    min-height: 380px !important; /* lower height for mobile */
   }
+}
 }
