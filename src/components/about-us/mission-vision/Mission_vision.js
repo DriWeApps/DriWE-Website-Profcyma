@@ -246,7 +246,7 @@ const Mission_vision = () => {
                       on-demand deliveries fast, safe, and effortlessly
                       connected.
                     </p>
-
+                    
                     <p className="havep">Have questions or need support?</p>
 
                     <Common_button name={"Contact us"} link={"/contact-us"} />

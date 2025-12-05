@@ -68,11 +68,11 @@
    GRADIENT COLOR EFFECTS (Dark Theme)
    ====================================== */
 .Counter_section .countersec:hover .color1 {
-    background: linear-gradient(145deg, #fcd128);
+    background: linear-gradient(145deg, #db9e05da);
 }
 
 .Counter_section .countersec:hover .color2 {
-    background: linear-gradient(145deg,  #9b5efc 60%);
+    background: linear-gradient(145deg, rgb(58, 4, 58));
 }
 
 /* ================================
