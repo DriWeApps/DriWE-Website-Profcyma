@@ -10,7 +10,7 @@ import { Navigation } from 'swiper/modules';
 const Rides_trust = () => {
   // Create state for the active testimonial
   const [activeTestimonial, setActiveTestimonial] = useState({
-    image: '/assets/images/home/testimonials/person1.png',
+    image: '/assets/images/about/meet-team/icon.jpg',
     review: "Driwe is a game-changer! Booking a cab or sending a package has never been this easy. Super reliable and affordable. I use it for both rides and deliveries — works perfectly every time!",
     name: "Ayesha R., Pune",
     position: "- IT department"
@@ -20,40 +20,40 @@ const Rides_trust = () => {
   const testimonials = [
     {
       id: 1,
-      thumbImage: '/assets/images/home/testimonials/person1.png',
-      mainImage: '/assets/images/home/testimonials/person1.png',
+      thumbImage: '/assets/images/about/meet-team/icon.jpg',
+      mainImage: '/assets/images/about/meet-team/icon.jpg',
       review: "Driwe is a game-changer! Booking a cab or sending a package has never been this easy. Super reliable and affordable. I use it for both rides and deliveries — works perfectly every time!",
       name: "Ayesha R., Pune",
       position: "- IT department"
     },
     {
       id: 2,
-      thumbImage: '/assets/images/home/testimonials/person2.png',
-      mainImage: '/assets/images/home/testimonials/person2.png', // You should add different images
+      thumbImage: '/assets/images/about/meet-team/icon.jpg',
+      mainImage: '/assets/images/about/meet-team/icon.jpg', // You should add different images
       review: "I rely on Driwe for my daily commute. The drivers are professional and the app is so easy to use. Plus, their delivery service saved me when I forgot important documents at home!",
       name: "Rahul K., Pune",
       position: "- Marketing Executive"
     },
     {
       id: 3,
-      thumbImage: '/assets/images/home/testimonials/person3.png',
-      mainImage: '/assets/images/home/testimonials/person3.png', // You should add different images
+      thumbImage: '/assets/images/about/meet-team/icon.jpg',
+      mainImage: '/assets/images/about/meet-team/icon.jpg', // You should add different images
       review: "As a small business owner, Driwe's delivery service has been invaluable. Affordable rates and reliable service have helped me expand my customer base significantly.",
       name: "Priya M., Pune",
       position: "- Boutique Owner"
     },
     {
       id: 4,
-      thumbImage: '/assets/images/home/testimonials/person1.png',
-      mainImage: '/assets/images/home/testimonials/person1.png', // You should add different images
+      thumbImage: '/assets/images/about/meet-team/icon.jpg',
+      mainImage: '/assets/images/about/meet-team/icon.jpg', // You should add different images
       review: "The safety features in Driwe give me peace of mind when my daughter uses it for her college commute. The ride-sharing option is also great for saving money.",
       name: "Vikram S., Pune",
       position: "- School Teacher"
     },
     {
       id: 5,
-      thumbImage: '/assets/images/home/testimonials/person2.png',
-      mainImage: '/assets/images/home/testimonials/person2.png', // You should add different images
+      thumbImage: '/assets/images/about/meet-team/icon.jpg',
+      mainImage: '/assets/images/about/meet-team/icon.jpg', // You should add different images
       review: "I've tried many ride-hailing apps, but Driwe stands out for its customer service. When I had an issue, they resolved it immediately. Highly recommended!",
       name: "Neha P., Pune",
       position: "- Software Developer"

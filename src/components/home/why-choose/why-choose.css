@@ -1,7 +1,3 @@
-/* ===========================
-   WHY CHOOSE SECTION – DARK THEME
-=========================== */
-
 .Why_choose_section {
   background: #121212; 
   padding: 60px 0;
@@ -32,7 +28,6 @@
   transition: 0.3s;
 }
 
-/* Boxes styling */
 .Why_choose_section .contentdiv .choose_box {
   margin-bottom: 50px;
 }
@@ -48,7 +43,7 @@
 .Why_choose_section .contentdiv .choose_box .number {
   font-weight: 700;
   font-size: 54px;
-  color: #c475ff; /* bright/light color on dark */
+  color: #c475ff; 
   transition: 0.3s;
 }
 
@@ -66,10 +61,10 @@
   margin-bottom: 0px;
 }
 
-/* Hover / in-view animations */
+
 @media (min-width: 992px) {
   .Why_choose_section .contentdiv:hover .choose_box .number {
-    color: #fcd128; /* highlight on hover */
+    color: #fcd128; 
   }
 
   .Why_choose_section .contentdiv:hover .mid_sec .mockupimg {
@@ -93,7 +88,7 @@
   }
 }
 
-/* Mobile responsive */
+
 @media (min-width:0px) and (max-width: 767.98px) {
   .Why_choose_section .contentdiv .left_sec .choose_box,
   .Why_choose_section .contentdiv .right_sec .choose_box {
@@ -132,7 +127,6 @@
   }
 }
 
-/* Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   .Why_choose_section .contentdiv .choose_box .number {
     font-size: 40px;
@@ -148,7 +142,6 @@
   }
 }
 
-/* Small desktops */
 @media (min-width: 992px) and (max-width: 1200px) {
   .Why_choose_section .contentdiv .choose_box .number {
     font-size: 40px;
@@ -163,7 +156,6 @@
   }
 }
 
-/* Medium desktops */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .Why_choose_section .contentdiv .choose_box .number {
     font-size: 50px;

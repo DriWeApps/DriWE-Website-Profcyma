@@ -1,6 +1,6 @@
 .Faq_section {
   margin-bottom: 5%;
-  background-color: #1b1b1b;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .Faq_section .faq_div .accordion {
-  background: #2a2a2a;
+  background:black;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px #000;

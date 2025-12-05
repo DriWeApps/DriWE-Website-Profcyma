@@ -1,9 +1,9 @@
 .Get_the_app_sec {
-    background: #000; /* dark background */
+    background: black; /* dark background */
 }
 
 .Get_the_app_sec .box_layer {
-    background: #1b1b1b; /* darker box background */
+    background: black; /* darker box background */
     border-radius: 0% 0% 5% 5% / 0% 0% 50% 50%;
 }
 

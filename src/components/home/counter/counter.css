@@ -3,7 +3,7 @@
 ====================================== */
 .Counter_section {
     margin: 5% 0%;
-    background: linear-gradient(120deg, #1a1a1a 0%, #242424 50%, #2e2e2e 100%);
+    background: linear-gradient(black);
     padding: 5% 0;
 }
 
@@ -78,11 +78,11 @@
    GRADIENT COLOR EFFECTS (Dark Theme)
 ====================================== */
 .Counter_section .countersec:hover .color1 {
-    background: linear-gradient(145deg, #db9e05da);
+    background: linear-gradient(145deg, rgb(216, 164, 32));
 }
 
 .Counter_section .countersec:hover .color2 {
-    background: linear-gradient(145deg, rgb(58, 4, 58));
+    background: linear-gradient(145deg,indigo);
 }
 
 /* ================================
@@ -103,7 +103,7 @@
     }
 
     .Counter_section .countersec.in-view .color1 {
-        background: linear-gradient(145deg, #fcd128 0%);
+        background: linear-gradient(145deg, #fac904 0%);
     }
 
     .Counter_section .countersec.in-view .color2 {
