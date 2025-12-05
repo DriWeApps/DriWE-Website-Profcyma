@@ -83,7 +83,7 @@ const Counter = () => {
                   <h1 className="number">
                     1K<span>+</span>
                   </h1>
-                  <p className="name">Successful Rides Completed</p>
+                  <p className="name">Rides Completed</p>
                 </div>
               </div>
 
