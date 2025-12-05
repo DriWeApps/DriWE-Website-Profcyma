@@ -1,9 +1,7 @@
-/* ======================================
-   COUNTER SECTION – Dark Theme
-====================================== */
+/* MAIN SECTION */
 .Counter_section {
     margin: 5% 0%;
-    background: linear-gradient(black);
+    background: black;
     padding: 5% 0;
 }
 
@@ -11,150 +9,97 @@
     margin-top: 5%;
 }
 
-/* =================================================
-   COUNTER BOX – Dark Glassmorphism + Glow Effect
-================================================= */
-.Counter_section .countersec .counter_box {
+/* CARD BASE STYLE */
+.counter_box {
     text-align: center;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(8px);
-    width: 100%;
-    height: 100%;
+    -webkit-backdrop-filter: blur(8px); /* iOS support */
     padding: 35px 10px;
     position: relative;
     transition: 0.35s ease;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);  /* default subtle shadow */
+    color: white;
 }
 
-/* ✨ GLOW EFFECT ON HOVER */
-.Counter_section .countersec .counter_box:hover {
-    box-shadow: 
-        0 0 12px rgba(255, 208, 80, 0.8),   /* soft gold glow */
-        0 0 25px rgba(255, 208, 80, 0.6), 
-        0 0 45px rgba(255, 208, 80, 0.35);
+/* -----------------------------------------
+   YELLOW CARDS (color1)
+----------------------------------------- */
+.counter_box.color1 {
+    background: linear-gradient(145deg, #f2c307 0%);
+}
+
+.counter_box.color1:hover,
+.counter_box.color1.touch {
+    box-shadow:
+        0 0 12px rgba(255, 208, 80, 0.9),
+        0 0 30px rgba(255, 208, 80, 0.7),
+        0 0 55px rgba(255, 208, 80, 0.4);
     transform: translateY(-6px);
-    border-color: rgba(255, 208, 80, 0.5);
 }
 
-/* Icon inside number */
-.Counter_section .countersec .counter_box .number .staricon {
+/* -----------------------------------------
+   PURPLE CARDS (color2)
+----------------------------------------- */
+.counter_box.color2 {
+    background: linear-gradient(145deg, #54327b 0%);
+}
+
+.counter_box.color2:hover,
+.counter_box.color2.touch {
+    box-shadow:
+        0 0 12px rgba(187, 134, 252, 0.9),
+        0 0 30px rgba(187, 134, 252, 0.7),
+        0 0 55px rgba(187, 134, 252, 0.4);
+    transform: translateY(-6px);
+}
+
+/* NUMBER */
+.counter_box .number {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* STAR ICON */
+.counter_box .staricon {
     font-size: 40px;
     color: #ffdf6e;
 }
 
-/* Counter number text */
-.Counter_section .countersec .counter_box .number {
-    font-size: 56px;
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 30px;
-    transition: 0.3s;
-}
-
-/* Hover animation */
-.Counter_section .countersec:hover .counter_box .number {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-/* Counter label */
-.Counter_section .countersec .counter_box .name {
-    font-weight: 500;
+/* LABEL */
+.counter_box .name {
     font-size: 18px;
-    color: #f5f5f5;
-    position: relative;
-    top: 0;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-/* Hover animation: lift text */
-.Counter_section .countersec:hover .counter_box .name {
-    top: -10px;
-}
-
-/* ======================================
-   GRADIENT COLOR EFFECTS (Dark Theme)
-====================================== */
-.Counter_section .countersec:hover .color1 {
-    background: linear-gradient(145deg, rgb(216, 164, 32));
-}
-
-.Counter_section .countersec:hover .color2 {
-    background: linear-gradient(145deg,indigo);
-}
-
-/* ================================
-   DESKTOP HOVER (≥992px)
-================================ */
-@media (min-width: 992px) {
-    .Counter_section .countersec:hover .counter_box .name {
-        top: -10px;
-    }
-}
-
-/* ================================
-   MOBILE IN-VIEW SCROLL (<992px)
-================================ */
-@media (max-width: 991.98px) {
-    .Counter_section .countersec.in-view .counter_box .name {
-        top: -10px;
-    }
-
-    .Counter_section .countersec.in-view .color1 {
-        background: linear-gradient(145deg, #fac904 0%);
-    }
-
-    .Counter_section .countersec.in-view .color2 {
-        background: linear-gradient(145deg, #bb86fc 0%);
-    }
-}
-
-/* ================================
-   MOBILE (0 – 767px)
-================================ */
-@media (max-width: 767.98px) {
-    .Counter_section .countersec .counter_box .number {
+/* MOBILE / TABLET RESPONSIVE */
+@media (max-width: 767px) {
+    .counter_box .number {
         font-size: 35px;
         margin-bottom: 0;
     }
 
-    .Counter_section .countersec:hover .counter_box .number {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .Counter_section .countersec .counter_box .name {
+    .counter_box .name {
         font-size: 14px;
     }
 
-    .Counter_section .countersec:hover .counter_box .name {
-        top: 0;
-    }
-
-    .Counter_section .countersec .counter_box .number .staricon {
+    .counter_box .staricon {
         font-size: 22px;
     }
 }
 
-/* ================================
-   TABLET (768px – 1200px)
-================================ */
-@media (min-width: 768.1px) and (max-width: 1200px) {
-    .Counter_section .countersec .counter_box .number {
+@media (min-width: 768px) and (max-width: 1200px) {
+    .counter_box .number {
         font-size: 45px;
     }
 
-    .Counter_section .countersec .counter_box .name {
+    .counter_box {
+        padding: 22px 12px;
+    }
+
+    .counter_box .name {
         font-size: 16px;
-    }
-
-    .Counter_section .countersec .counter_box {
-        padding: 20px 10px;
-    }
-
-    .Counter_section .countersec .counter_box .number .staricon {
-        font-size: 30px;
     }
 }
