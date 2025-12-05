@@ -57,22 +57,20 @@
 /* ============================
    BANNER SECTION
 ============================== */
-/* FIX BANNER CUTTING ISSUE */
 .banner_div {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  height: 100%;
   background: #000;
-  min-height: 460px;  /* <-- ADD THIS LINE */
-  display: flex;
-  align-items: flex-end; /* Ensures overlay stays inside */
 }
-
 
 .banner_div .banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(60%);
+  transition: 0.4s ease;
 }
 
 .banner_div:hover .banner {
@@ -150,11 +148,5 @@
   .overlay-content .ourh1 {
     font-size: 24px;
   }
-
-
-  @media (max-width: 991px) {
-  .banner_div {
-    min-height: 380px !important; /* lower height for mobile */
-  }
 }
-}
+

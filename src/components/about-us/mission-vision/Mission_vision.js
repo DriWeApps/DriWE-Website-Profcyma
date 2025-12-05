@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import "./Mission_vision.css";
 import Common_title from "../../common/common-title/Common_title";
@@ -137,4 +136,3 @@ const Mission_vision = () => {
 };
 
 export default Mission_vision;
-
