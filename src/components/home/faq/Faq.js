@@ -48,69 +48,63 @@ const Faq = () => {
                 <Accordion defaultActiveKey="0">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      Q1: How do I book a service?
+                      Q1: What payment methods does DriWE accept?
                     </Accordion.Header>
                     <Accordion.Body>
                       <p className="content">
-                        Booking a service is simple! You can easily book through
-                        our website by selecting your desired service and
-                        preferred time slot, or by downloading our mobile app
-                        for quick and convenient scheduling.
+                        DriWE accepts all major credit cards, debit cards, digital wallets 
+                        (UPI, Paytm, Google Pay), and cash payments. Your payment method can 
+                        be easily managed in the app settings.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
                     <Accordion.Header>
-                      Q2: What payment methods do you accept?
+                      Q2: Can I track my driver in real time?
                     </Accordion.Header>
                     <Accordion.Body>
                       <p className="content">
-                        Booking a service is simple! You can easily book through
-                        our website by selecting your desired service and
-                        preferred time slot, or by downloading our mobile app
-                        for quick and convenient scheduling.
+                        Yes! Once your ride is confirmed, you can track your driver’s location 
+                        in real-time on the map. You’ll also receive SMS updates with driver details 
+                        and estimated arrival time.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
-                      Q2: What payment methods do you accept?
+                      Q3:What is the Live Meter feature and how does it work??
                     </Accordion.Header>
                     <Accordion.Body>
                       <p className="content">
-                        Booking a service is simple! You can easily book through
-                        our website by selecting your desired service and
-                        preferred time slot, or by downloading our mobile app
-                        for quick and convenient scheduling.
+                        The Live Meter shows your real-time trip fare as you travel. 
+                        It updates automatically based on distance, time, and ride conditions, 
+                        ensuring full transparency throughout your ride.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="3">
                     <Accordion.Header>
-                      Q2: What payment methods do you accept?
+                      Q4:What can I do in case of an emergency?
                     </Accordion.Header>
                     <Accordion.Body>
                       <p className="content">
-                        Booking a service is simple! You can easily book through
-                        our website by selecting your desired service and
-                        preferred time slot, or by downloading our mobile app
-                        for quick and convenient scheduling.
+                        DriWE provides an in-app SOS feature for your safety. 
+                        Simply tap the SOS button, capture a quick photo if prompted, 
+                        and the app will instantly show emergency contact numbers and 
+                        assistance options.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="4">
                     <Accordion.Header>
-                      Q2: What payment methods do you accept?
+                      Q5: Can I use Ride and Courier at the same time?
                     </Accordion.Header>
                     <Accordion.Body>
                       <p className="content">
-                        Booking a service is simple! You can easily book through
-                        our website by selecting your desired service and
-                        preferred time slot, or by downloading our mobile app
-                        for quick and convenient scheduling.
+                        Yes, absolutely.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>

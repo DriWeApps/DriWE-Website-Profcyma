@@ -46,9 +46,9 @@ function Header() {
                   Contact us
                 </Nav.Link>
 
-                <Nav.Link  >
-                  <Common_button name={"Sign Up"}  link={"/sign-up"} />
-                </Nav.Link>
+                <Nav.Link>
+  <Common_button name="Sign Up" link="/sign-up" />
+</Nav.Link>
 
               </Nav>
             </Navbar.Collapse>

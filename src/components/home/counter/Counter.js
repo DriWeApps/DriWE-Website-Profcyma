@@ -42,7 +42,7 @@ const Counter = () => {
               <div className="col-lg-3 col-sm-6 col-12 mb-3">
                 <div className="counter_box color1">
                   <h1 className="number">
-                    1M<span>+</span>
+                    10k<span>+</span>
                   </h1>
                   <p className="name">App Downloads</p>
                 </div>
@@ -50,7 +50,7 @@ const Counter = () => {
               <div className="col-lg-3 col-sm-6 col-12 mb-3">
                 <div className="counter_box color2">
                   <h1 className="number">
-                    500K<span>+</span>
+                    1K<span>+</span>
                   </h1>
                   <p className="name">Successful Rides Completed</p>
                 </div>
@@ -58,7 +58,7 @@ const Counter = () => {
               <div className="col-lg-3 col-sm-6 col-12 mb-3">
                 <div className="counter_box color1">
                   <h1 className="number">
-                    20K<span>+</span>
+                    15K<span>+</span>
                   </h1>
                   <p className="name">Verified Drivers & Partners</p>
                 </div>
@@ -66,12 +66,12 @@ const Counter = () => {
               <div className="col-lg-3 col-sm-6 col-12 mb-3">
                 <div className="counter_box color2">
                   <h1 className="number">
-                    4.8
+                    10k
                     <span>
-                      <FontAwesomeIcon className="staricon" icon={faStar} />
+                      <FontAwesomeIcon className="staricon" />
                     </span>
                   </h1>
-                  <p className="name">Average User Rating</p>
+                  <p className="name">Happy customers</p>
                 </div>
               </div>
             </div>

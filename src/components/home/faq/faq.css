@@ -1,7 +1,7 @@
 .Faq_section {
   margin-bottom: 5%;
-  background-color: #1b1b1b; /* dark background for section */
-  color: #ffffff; /* default text color */
+  background-color: #1b1b1b;
+  color: #ffffff;
 }
 
 .Faq_section .banner_div {
@@ -14,7 +14,7 @@
   width: 100%;
   height: auto;
   transition: 0.3s;
-  filter: brightness(0.8); /* slightly darken banner */
+  filter: brightness(0.8);
 }
 
 .Faq_section .faq_div {
@@ -23,24 +23,24 @@
 }
 
 .Faq_section .faq_div .accordion {
-  background: #2a2a2a; /* dark card background */
+  background: #2a2a2a;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px #000; /* darker shadow */
+  box-shadow: 0px 0px 10px 0px #000;
   position: relative;
 }
 
 .Faq_section .faq_div .accordion .accordion-item {
   border: 0px;
   margin-bottom: 15px;
-  background-color: #2a2a2a; /* dark background */
+  background-color: #2a2a2a;
 }
 
 .Faq_section .faq_div .accordion .accordion-button {
-  background: #2a2a2a; /* dark background */
+  background: #2a2a2a;
   font-weight: 500;
   font-size: 18px;
-  color: #ffffff; /* white text */
+  color: #ffffff;
   border-radius: 5px;
 }
 
@@ -52,16 +52,20 @@
   box-shadow: none;
 }
 
-.Faq_section .faq_div .accordion .accordion-button:not(.collapsed)::after {
-  filter: invert(1); /* white arrow icon */
+
+.Faq_section .faq_div .accordion .accordion-button::after,
+.Faq_section .faq_div .accordion .accordion-button:not(.collapsed)::after,
+.Faq_section .faq_div .accordion .accordion-button.collapsed::after {
+  filter: invert(1);
 }
+
 
 .Faq_section .faq_div .accordion .content {
   font-size: 16px;
-  color: #ccc; /* light gray content text */
+  color: #ccc;
 }
 
-/* Hover effects for desktop */
+
 @media (min-width: 992px) {
   .Faq_section:hover .faq_div {
     margin-top: -10%;
@@ -76,7 +80,7 @@
   }
 }
 
-/* Mobile view */
+
 @media (max-width: 991.98px) {
   .Faq_section.in-view .faq_div {
     margin-top: -10%;
@@ -91,7 +95,7 @@
   }
 }
 
-/* Responsive adjustments */
+
 @media (min-width: 0px) and (max-width: 991px) {
   .Faq_section .faq_div .accordion {
     padding: 10px;

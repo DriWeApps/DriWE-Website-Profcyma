@@ -1,19 +1,21 @@
-import React from 'react'
-import './common_button.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./common_button.css";
 
-const Common_button = (props) => {
+const Common_button = ({ name, link, onClick }) => {
   return (
-    <>
-      <div className='commonbtndiv'>
-        <button 
-          className='common-btn' 
-          onClick={props.onClick}
-        >
-          <span>{props.name}</span>
+    <div className="commonbtndiv">
+      {link ? (
+        <Link to={link} className="common-btn">
+          <span>{name}</span>
+        </Link>
+      ) : (
+        <button onClick={onClick} type="button" className="common-btn">
+          <span>{name}</span>
         </button>
-      </div>
-    </>
-  )
-}
+      )}
+    </div>
+  );
+};
 
-export default Common_button
+export default Common_button;
